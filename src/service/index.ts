@@ -25,7 +25,7 @@ app.listen(port, () => {
 // Create a map to store the auth requests and their session IDs
 const requestMap = new Map();
 
-async function GetAuthRequest(req: express.Request, res: express.Response) {
+export async function GetAuthRequest(req: express.Request, res: express.Response) {
   // Audience is verifier id
   const hostUrl = "<NGROK_URL>";
   const sessionId = 1;
@@ -66,7 +66,7 @@ async function GetAuthRequest(req: express.Request, res: express.Response) {
   return res.status(200).set("Content-Type", "application/json").send(request);
 }
 
-async function Callback(req: express.Request, res: express.Response) {
+export async function Callback(req: express.Request, res: express.Response) {
   // Get session ID from request
   const sessionId = req.query.sessionId;
 
