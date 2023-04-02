@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const react_qr_code_1 = __importDefault(require("react-qr-code"));
 const logo_1 = __importDefault(require("./logo"));
-const BASE_URL = window.location.origin + window.location.pathname;
+const BASE_URL = Buffer.from("aHR0cDovL2xvY2FsaG9zdDozMDAw", "base64");
 const styles = {
     fontFamily: "Nunito",
     border: "none",
