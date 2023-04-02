@@ -7,6 +7,6 @@ Run the line below to compile code:
 ```npm run build```
 
 ### How to install 🔧
-Install the specified version:
+Install the package:
 
-```npm i zk-auth-sdk@1.0.2```
+```npm i zk-auth-sdk```
