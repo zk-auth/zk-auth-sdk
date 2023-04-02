@@ -8,7 +8,7 @@ export type SignInWithZkAuthButtonProps = {
   onError?: string;
 };
 
-const BASE_URL = window.location.origin + window.location.pathname;
+const BASE_URL = Buffer.from("aHR0cDovL2xvY2FsaG9zdDozMDAw", "base64");
 
 const styles = {
   fontFamily: "Nunito",
