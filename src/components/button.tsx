@@ -4,8 +4,8 @@ import QRCode from "react-qr-code";
 import ZkAuthLogo from "./logo";
 
 export type SignInWithZkAuthButtonProps = {
-  onSuccess: string;
-  onError?: string;
+  onSuccess: () => void;
+  onError?: (error: any) => void;
 };
 
 const BASE_URL = Buffer.from("aHR0cDovL2xvY2FsaG9zdDozMDAw", "base64");
